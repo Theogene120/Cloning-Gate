@@ -10,29 +10,89 @@
     <!-- Navigation bar and background -->
     <div class="relative overflow-hidden">
       <img class="opacity- h-[44rem] w-full object-cover" src="image/penn-dental-cedar-2.avif" alt="background">
-      <div class="bg-gray-900 absolute inset-0 opacity-30"></div>
-      <div class="absolute top-0">
+      <div class="bg-gray-900 absolute inset-0 opacity-70"></div>
+      <div class="absolute top-0 right-0 left-0">
 
         <!-- Navigation bar -->
-        <div class="flex justify-between mx-8 py-4">
-          <p class="text-white text-2xl"><i class="fa-solid fa-magnifying-glass"></i></p>
-          <p class=""><img class="h-10" src="image/UPenn-logo.svg" alt="logo"></p>
-          <p class="text-white text-3xl"><i class="fa-solid fa-bars"></i></p>
-          <hr>
+        <div class="flex justify-between mx-8 py-4 md:w-full md:pr-20  border-b">
+          <p class="text-white text-2xl lg:hidden"><i class="fa-solid fa-magnifying-glass"></i></p>
+          <p class=""><img class="h-10 md:h-16" src="image/UPenn-logo.svg" alt="logo"></p>
+          <p class="text-white text-3xl lg:hidden"><i class="fa-solid fa-bars"></i></p>
+          <div class="text-white justify-center items-center gap-4 hidden lg:flex">
+            <p class="text-white text-xl "><i class="fa-solid fa-magnifying-glass"></i></p>
+            <p class="p-4 text-[12px] font-bold tracking-wider">RESOURCES <span><i class="fa-solid fa-angle-down"></i></span></p>
+            <p class=" p-4 text-[12px] font-bold tracking-wider bg-[#990000]">GIVE TO PENN</p>
+          </div>
         </div>
+
+        <!-- hidden menu, block on lg -->
+
+        <div class="hidden lg:flex justify-evenly xl:justify-end xl:gap-10 xl:mr-4 text-white font-bold text-sm">
+          <p>ACADEMICS <span><i class="fa-solid fa-angle-down"></i></p>
+          <p class="opacity-50">/</p>
+          <p>ADMISSIONS & AID</p>
+          <p class="opacity-50">/</p>
+          <p>ATHLETICS</p>
+          <p class="opacity-50">/</p>
+          <p>RESEARCH & INNOVATION <span><i class="fa-solid fa-angle-down"></i></p>
+          <p class="opacity-50">/</p>
+          <p>LIFE AT PENN <span><i class="fa-solid fa-angle-down"></i></p>
+          <p class="opacity-50">/</p>
+          <p>ABOUT <span><i class="fa-solid fa-angle-down"></i></p>
+        </div>
+
         <!-- Text on the image -->
 
-        <div>
-          <p>HEALTH & MEDICINE</p>
-          <p>Penn Dental on Cedar Bridges medicine and dentistry, lightens ER demands</p>
-          <p><i class="fa-solid fa-minus"></i></p>
-          <p>
+        <div class="ml-8 pt-20 flex flex-col">
+          <p class="text-white text-sm font-bold">HEALTH & MEDICINE</p>
+          <p class="text-white text-5xl md:w-[44rem] ">Penn Dental on Cedar Bridges medicine and dentistry, lightens ER demands</p>
+          <p class="text-6xl rounded-none text-white opacity-60"><i class="fa-solid fa-minus"></i></p>
+          <p class="text-white text-lg font-bold tracking-wide md:w-[40rem]">
             Penn Dental Medicine at PHMC on Cedar is one of five community care programs the School of dental medicine operates. 
             At Penn Dental on Cedar, part of the mission is to integrate dental and medical care.
           </p>
         </div>
       </div>
     </div>
+
+
+    <!-- Topics and news -->
+    <div class="mt-8">
+
+      <!-- head -->
+      <div>
+        <div  class="flex items-center justify-center">
+          <label class="cursor-pointer flex items-center border-b-2 border-gray-300 w-32 p-2  justify-between">
+            <input type="checkbox" class="peer hidden">
+            <span class="text-sm font-semibold opacity-70">Topics</span>
+            <i class="fa-solid fa-caret-down transition-transform peer-checked:rotate-180 duration-500"></i>
+            <div class="hidden absolute peer-checked:flex flex-col gap-3 pl-4 mt-[27rem] bg-white z-50 text-black">
+                <p class="opacity-70">Featured</p>
+                <p class="opacity-70">Arts & Humanities</p>
+                <p class="opacity-70">Social Sciences</p>
+                <p class="opacity-70">Business & Low</p>
+                <p class="opacity-70">Natural Sciences</p>
+                <p class="opacity-70">Technology</p>
+                <p class="opacity-70">Health & Medicine</p>
+                <p class="opacity-70">Campus & Community</p>
+                <p class="opacity-70">Global</p>
+            </div>
+          </label>
+        </div>
+        <div class=" mt-3 w-14 ml-4">
+          <p class="border-b-4 px-0 text-4xl  py-3 border-gray-400">News</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- News grids and images -->
+
+    <div>
+      <div>
+        <img src="" alt="">
+      </div>
+    </div>
+    
     <h1 class="text-4xl text-center font-extrabold text-purple-600 mt-32">Hey I'm placeholder, don't worry about me 😋</h1>
     <script type="module" src="/src/main.js"></script>
   </body>
